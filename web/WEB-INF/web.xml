@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:web="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd" version="2.4">
+  <display-name>Template</display-name>
+  <description>
+      An empty project to use as a template for your own ones
+    </description>
+  <context-param>
+    <param-name>dao</param-name>
+    <param-value>IDENTIFICATIVO_DELL_IMPLEMENTAZIONE</param-value>
+  </context-param>
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+  <error-page>
+    <error-code>404</error-code>
+    <location>/errors/notfound.html</location>
+  </error-page>
+  <error-page>
+    <exception-type>javax.servlet.ServletException</exception-type>
+    <location>/errors/failure.jsp</location>
+  </error-page>
+  <!-- <servlet>
+    <display-name>ServletProva</display-name>
+    <servlet-name>ServletProva</servlet-name>
+    <servlet-class>servlet.ServletProva</servlet-class>
+  </servlet> -->
+  <!-- <servlet-mapping>
+    <servlet-name>ServletProva</servlet-name>
+    <url-pattern>/pages/ServletProva</url-pattern>
+  </servlet-mapping> -->
+</web-app>
